@@ -1,0 +1,10 @@
+name: Run Remote Android Build
+
+on:
+  push:
+    branches: [ "main" ] # If your project uses "master", change "main" to "master"
+
+jobs:
+  trigger-central-build:
+    # This points directly to your master blueprint file above
+    uses: YOUR_GITHUB_USERNAME/github-actions-blueprints/.github/workflows/android-reusable-build.yml@main
